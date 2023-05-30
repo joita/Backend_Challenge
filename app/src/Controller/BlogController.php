@@ -7,7 +7,7 @@ use Exception;
 
 class BlogController
 {
-    public function create(Request $request, $slug) : Response
+    public function create(Request $request) : Response
     {
         $datos = json_decode(file_get_contents('php://input'));
         $blogModel = new BlogModel();
